@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Function to count the number of Digits
+int counter(int num)
+{
+    int count = 0;
+    while (num > 0)
+    {
+        int lastDigit = num % 10;
+        count++;
+        num = num / 10;
+    }
+    return count;
+}
+bool isArmstrong(int num)
+{
+    // Temporary variable to store num
+    int temp = num;
+    int no_of_digits = counter(num);
+    int sum = 0;
+    while (num > 0)
+    {
+        int digit = num % 10;
+        // Storing the sum of digits rasied to the power of number of digits
+        sum = sum + pow(digit, no_of_digits);
+        num = num / 10;
+    }
+    // returns if num is armstrong number or not
+    return temp == sum; 
+}
