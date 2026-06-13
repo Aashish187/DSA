@@ -1,6 +1,6 @@
 /*
 If Number of Positives and Negatives are not Equal
-Time Complexity  : O(N+)
+Time Complexity  : O(N+n/2)
 Space Complexity : O(N)
 Algorithm  :
     1)
