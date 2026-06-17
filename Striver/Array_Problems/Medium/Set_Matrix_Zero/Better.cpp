@@ -19,9 +19,9 @@ void Set_Matrix_Zero(vector<vector<int>> &arr)
         for (int j = 0; j < n; j++)
         {
             if (arr[i][j] == 0)
-            { // mark that row and column 
-                rows[i]= 1;
-                columns[j]=1;
+            { // mark that row and column
+                rows[i] = 1;
+                columns[j] = 1;
             }
         }
     }
@@ -29,7 +29,7 @@ void Set_Matrix_Zero(vector<vector<int>> &arr)
     {
         for (int j = 0; j < n; j++)
         {
-            if ((rows[i] || columns[j] )==1)
+            if ((rows[i] || columns[j]) == 1)
             {
                 arr[i][j] = 0;
             }
@@ -48,7 +48,7 @@ void Set_Matrix_Zero(vector<vector<int>> &arr)
 int main()
 {
     vector<vector<int>> matrix = {
-        {{1,1,1,1}, {1,0,1,1}, {1,1,0,1},{1,0,0,1}}};
+        {{1, 1, 1, 1}, {1, 0, 1, 1}, {1, 1, 0, 1}, {1, 0, 0, 1}}};
     Set_Matrix_Zero(matrix);
     return 0;
 }
