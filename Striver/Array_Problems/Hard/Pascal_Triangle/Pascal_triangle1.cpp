@@ -1,5 +1,5 @@
 /*
-Time Complexuty : O(R or N-R)
+Time Complexity : O(R or N-R)
 Space Complexity : O(1)
 
                     This version will print the number needed of the pascal triangle
