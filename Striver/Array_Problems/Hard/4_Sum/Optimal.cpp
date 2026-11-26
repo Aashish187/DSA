@@ -16,7 +16,7 @@ vector<vector<int>> findQuadruples(vector<int> arr, int n, int target)
         }
         for (int j = i + 1; j < n; j++)
         {
-            if (j > i+1 && arr[j] == arr[j - 1])
+            if (j > i + 1 && arr[j] == arr[j - 1])
             {
                 continue;
             }
@@ -24,7 +24,7 @@ vector<vector<int>> findQuadruples(vector<int> arr, int n, int target)
             int l = n - 1;
             while (k < l)
             {
-                long long sum = (long long) arr[i] + arr[j] + arr[k] + arr[l];
+                long long sum = (long long)arr[i] + arr[j] + arr[k] + arr[l];
                 if (sum == target)
                 {
                     ans.push_back({arr[i], arr[j], arr[k], arr[l]});
@@ -39,10 +39,12 @@ vector<vector<int>> findQuadruples(vector<int> arr, int n, int target)
                         l--;
                     }
                 }
-                else if (sum < target ){
+                else if (sum < target)
+                {
                     k++;
                 }
-                else if( sum > target ){
+                else if (sum > target)
+                {
                     l--;
                 }
             }
